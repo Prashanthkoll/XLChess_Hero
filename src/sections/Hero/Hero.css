@@ -1,0 +1,141 @@
+.hero {
+  max-width:1400px;
+  margin:auto;
+  padding:70px 40px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  grid-template-areas:
+    "left right"
+    "bottom right";
+  align-items:center;
+  gap:70px;
+  min-height:90vh;
+  position:relative;
+}
+
+.hero-left {
+  grid-area:left;
+}
+
+.hero-right {
+  grid-area:right;
+}
+
+.hero-bottom {
+  grid-area:bottom;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.hero-left h1 {
+  font-size:68px;
+  line-height:1.05;
+  margin:20px 0;
+  font-weight:800;
+}
+
+.hero-left h1 span {
+  background:linear-gradient(90deg,#F8B84E,#ffcf6b);
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero-left p {
+  font-size:20px;
+  line-height:1.75;
+  color:#AAB7CF;
+  max-width:600px;
+}
+
+.badge {
+  display:inline-flex;
+  padding:10px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  color:#F8B84E;
+  font-weight:600;
+  backdrop-filter:blur(20px);
+}
+
+.hero-actions {
+  display:flex;
+  gap:18px;
+  margin-top:32px;
+  flex-wrap:wrap;
+}
+
+.hero-chips {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.hero-chips span {
+  display:inline-flex;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  color:#E2E8F0;
+  font-size:14px;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.hero-right {
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:620px;
+}
+
+@media (max-width:1000px) {
+  .hero {
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "left"
+      "right"
+      "bottom";
+    text-align:center;
+    padding:50px 24px;
+    gap:35px;
+  }
+
+  .hero-right {
+    justify-content:center;
+    min-height:auto;
+  }
+
+  .hero-left p {
+    margin:auto;
+  }
+
+  .hero-left h1 {
+    font-size:52px;
+  }
+
+  .hero-actions {
+    justify-content:center;
+  }
+
+  .hero-chips {
+    justify-content:center;
+  }
+}
+
+@media (max-width:580px) {
+  .hero {
+    padding:40px 18px;
+  }
+
+  .hero-left h1 {
+    font-size:42px;
+  }
+
+  .hero-left p {
+    font-size:17px;
+  }
+}

@@ -1,0 +1,28 @@
+.floating-container{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+}
+
+.floating-piece{
+
+    position:absolute;
+
+    color:white;
+
+    opacity:.12;
+
+    user-select:none;
+
+    text-shadow:
+        0 0 15px rgba(255,255,255,.25);
+
+    will-change:transform;
+
+}
