@@ -339,7 +339,7 @@ assets/Play.png
 # Live Demo
 
 ```
-https://your-live-demo.vercel.app
+https://xl-chess-hero-bgne.vercel.app/
 ```
 
 ---
