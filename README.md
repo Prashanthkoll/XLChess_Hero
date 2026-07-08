@@ -93,7 +93,7 @@ src
 ## Clone the repository
 
 ```bash
-git clone https://github.com/Prashanthkoll/XLChess-Hero.git
+git clone https://github.com/Prashanthkoll/XLChess_Hero.git
 ```
 
 ## Move into the project
